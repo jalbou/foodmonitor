@@ -6,7 +6,7 @@ while True:
 
     payload = {}
     headers = {
-    'Cookie': '__cfduid=d4a4f50d770186b055fe7be5c6bf4a0941585410447; METRO_ANONYMOUS_COOKIE=230af30e-dca7-4e64-a1b3-b72cec3c46d3; NSC_JOqrpj5ubudv2fpeodwdbrdxp2rrpei=ffffffff09023b0345525d5f4f58455e445a4a423660; firstPageAlreadyVisited=false; hide-store-banner=true; _gcl_au=1.1.1901223543.1585410494; sto__vuid=61c886e482b755b10a81d18a57a3228c; _ga=GA1.2.827530042.1585410495; _gid=GA1.2.1781070790.1585410495; _fbp=fb.1.1585410494650.1597290669; _hjid=4038234f-b5d7-4a4b-a264-87ec2462baaa; __sonar=6157287068393680578; InterceptVisited=1; nbVisited=1; __gads=ID=397fcf1e168c5b3e:T=1585410815:S=ALNI_MavNXnVzuxRxujpYcn6R8cQCHx6xA; hprl=fr; sto__session=1585428243319; JSESSIONID=089E78EBFA418471F9480F7F61A441FD; ADRUM=s=1585428291387&r=https%3A%2F%2Fwww.metro.ca%2Faccueil%3F0; sto__count=2; _gat_UA-664008-1=1'
+    'Cookie': '__cfduid=d0d97751098823e2f4e391333cb28492e1584373913; METRO_ANONYMOUS_COOKIE=45374623-1053-4a7d-9196-80c333fbefec; hprl=en; hide-store-banner=true; nbVisited=1; NSC_JOqrpj5ubudv2fpeodwdbrdxp2rrpei=ffffffff09023b1c45525d5f4f58455e445a4a423660; sto__session=1585437026467; firstPageAlreadyVisited=false; JSESSIONID=80A09818AE5E25727D8ECDDAB9B0677B; sto__count=1; ADRUM_BTa=R:23|g:e9587403-e4c2-4d35-8b44-58ce106f203b|n:metrorichelieuinc-prod_c22980fa-c09c-4712-b489-98164bef9f11; ADRUM_BT1=R:23|i:268162|e:78'
     }
     response = requests.request("GET", url, headers=headers, data = payload)
     retour = str(response.text.encode('utf8'))
