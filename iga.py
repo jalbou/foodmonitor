@@ -16,4 +16,7 @@ response = requests.request("POST", url, headers=headers, data = payload)
 
 soup = BeautifulSoup(response.text, 'html.parser')
 livraison = soup.find(class_='js-select-days fluid')
-print(livraison)
+jour_livraison = livraison.find_all('option')
+#print(livraison)
+for jour in jour_livraison:
+    print(jour.prettify())
