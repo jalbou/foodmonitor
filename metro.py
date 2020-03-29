@@ -12,12 +12,12 @@ while True:
     retour = str(response.text.encode('utf8'))
     if response.status_code != 200:
         print("Error Sending SMS and exiting ...")
-        #client = nexmo.Client(key='d8f089a6', secret='1BUTd1KgHnlzixEV')
-        #client.send_message({
-        #        'from': '15792690732',
-        #        'to': '15147991390',
-        #        'text': 'Erreur Changer le cookie !',
-        #})
+        client = nexmo.Client(key='d8f089a6', secret='1BUTd1KgHnlzixEV')
+        client.send_message({
+                'from': '15792690732',
+                'to': '15147991390',
+                'text': 'Erreur Changer le cookie !',
+        })
         exit()
     else:
         print(response.status_code)
