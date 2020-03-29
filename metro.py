@@ -1,3 +1,7 @@
+## In order to run this script you have to :
+## Pick the new URL like https://www.metro.ca/fr/service-and-timeslot/timeslot?_=1585444983169 by login on the metro.ca website and check the timeslot page
+## Pick the corresponding cookie header and replace the cookie value & URL value
+
 import requests
 import nexmo
 import time
