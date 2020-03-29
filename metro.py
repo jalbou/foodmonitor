@@ -6,11 +6,11 @@ import requests
 import nexmo
 import time
 while True:
-    url = "https://www.metro.ca/fr/service-and-timeslot/timeslot?_=1585444983169"
+    url = "https://www.metro.ca/en/service-and-timeslot/timeslot?_=1585447087770"
 
     payload = {}
     headers = {
-    'Cookie': '__cfduid=d0d97751098823e2f4e391333cb28492e1584373913; METRO_ANONYMOUS_COOKIE=45374623-1053-4a7d-9196-80c333fbefec; hprl=en; hide-store-banner=true; nbVisited=1; NSC_JOqrpj5ubudv2fpeodwdbrdxp2rrpei=ffffffff09023b1c45525d5f4f58455e445a4a423660; firstPageAlreadyVisited=false; sto__session=1585444931922; JSESSIONID=8950504E08F4198785BF2DCB0796D75C; sto__count=3'
+    'Cookie': '__cfduid=d0d97751098823e2f4e391333cb28492e1584373913; METRO_ANONYMOUS_COOKIE=45374623-1053-4a7d-9196-80c333fbefec; hprl=en; hide-store-banner=true; nbVisited=1; NSC_JOqrpj5ubudv2fpeodwdbrdxp2rrpei=ffffffff09023b1c45525d5f4f58455e445a4a423660; firstPageAlreadyVisited=false; JSESSIONID=8950504E08F4198785BF2DCB0796D75C; ADRUM_BTa=R:23|g:2670cb83-2cc6-4236-a556-a07724f59781|n:metrorichelieuinc-prod_c22980fa-c09c-4712-b489-98164bef9f11; ADRUM_BT1=R:23|i:268162|e:18; sto__session=1585447088127; sto__count=0'
     }
     response = requests.request("GET", url, headers=headers, data = payload)
     retour = str(response.text.encode('utf8'))
