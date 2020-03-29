@@ -12,4 +12,8 @@ headers = {
 
 response = requests.request("POST", url, headers=headers, data = payload)
 
-print(response.text.encode('utf8'))
+#print(response.text.encode('utf8'))
+
+soup = BeautifulSoup(response.text, 'html.parser')
+livraison = soup.find(class_='js-select-days fluid')
+print(livraison)
