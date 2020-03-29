@@ -2,7 +2,7 @@ import requests
 import nexmo
 import time
 while True:
-    url = "https://www.metro.ca/en/service-and-timeslot/timeslot?_=1585444983169"
+    url = "https://www.metro.ca/fr/service-and-timeslot/timeslot?_=1585444983169"
 
     payload = {}
     headers = {
