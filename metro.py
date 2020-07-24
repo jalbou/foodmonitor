@@ -29,8 +29,8 @@ while True:
         if not "Aucune plage horaire disponible" in retour:
             client = nexmo.Client(key='d8f089a6', secret='1BUTd1KgHnlzixEV')
             client.send_message({
-                'from': '15792690732',
-                'to': '15147991390',
+                'from': '',
+                'to': '',
                 'text': 'Slot de dispo !',
             })
         else:
